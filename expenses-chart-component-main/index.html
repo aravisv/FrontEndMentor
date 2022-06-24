@@ -3,43 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
   <title>Frontend Mentor | Expenses chart component</title>
-
-  <link rel="stylesheet" href="styles.css">
-  
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+  <link rel="stylesheet" href="styles.css">  
+  <script src="script.js"></script>
   </style>
 </head>
+
+
 <body>
 
-  My balance
-  $921.48
+<div>
 
-  Spending - Last 7 days
+  <!-- Background patterns using div
+  <div class="background-circle"></div>
+  <div class="parallel-lines"></div>  
+  <div class="dotted-border" ></div>
+  <div class="dotted-border" style="margin:550px 50px 50px 50px;" ></div> -->
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+  <!--main box -->
+  <div class="main-background">
 
-  Total this month
-  $478.33
+    <div class="chart-heading">
+      <section class="">
+      <h4 class="chart-heading1">My balance</h4>
+      <h2 class="heading2">$921.48</h2>
+      </section>
+      <aside class="logo">
+        <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
+      </aside>
 
-  +2.4%
-  from last month
-  
+
+    </div>
+
+    <div class="chart-body">
+
+      <h2 class="heading2"> Spending - Last 7 days </h2>
+      <div class="chart"> 
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="week">
+        <h4 class="day">Mon</h4>
+        <h4 class="day">Tue</h4>
+        <h4 class="day">Wed</h4>
+        <h4 class="day">Thu</h4>
+        <h4 class="day">Fri</h4>
+        <h4 class="day">Sat</h4>
+        <h4 class="day">Sun</h4>
+      </div>
+
+      <div class ="monthly-spending">
+        Total this month
+        $478.33
+
+        +2.4%
+        from last month
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Aravinda S V</a>.
   </div>
+
+</div>
+
+
+
 </body>
+
 </html>
+
