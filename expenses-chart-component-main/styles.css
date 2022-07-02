@@ -63,6 +63,12 @@ body{
     box-shadow: -12px 12px 25px -10px rgba(31, 73, 125, 0.8);
 }
 
+@media (max-width:800px){
+    .main-background{
+        width: 500px;
+    }
+}
+
 .chart-heading{  
     color: white;
     display: flex;
@@ -87,38 +93,37 @@ body{
 }
 
 .chart-body{
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
     height:45%;
-    background-color: white;
     width: 400px;
+    background-color: white;
     margin: 0.75em 0;
-    border-radius: 10px;
-
     padding: 2em 2em 2em 2em;
+    border-radius: 10px;
     box-sizing: border-box;
 }
 
-.pointer-expense,
-.chart,
-.week{
+.bar-chart{
     display: flex;
-    flex-direction: row;    
     justify-content: space-between;
-    padding: 2em 0 0 0
-    /*box-sizing: border-box; */
+    text-align: center;
 }
 
-.week{
-    padding-top: 0.25em;    
+.column-of-day{
+    display: flex;
+    flex-direction: column;
+}
+
+.spent-seen-on-hover{
+    padding: 1em 0;
+    visibility: hidden;
+    order: 1;
 }
 
 .bar{
     background-color:hsl(10, 79%, 65%);   
-    width: 10%;
     height:100px;
     border-radius:5px;
+    order: 2;
 }
 
 .bar:hover{
@@ -126,21 +131,10 @@ body{
     cursor: pointer;    
 }
 
-.mouse-pointer-day{
-    width: 10%;
-    height:30px;
-}
+.bar:hover ~ .spent-seen-on-hover{
+    visibility: visible;
+}    
 
-.mouse-pointer-day:hover{
-    background-color: green;
-    content: "hello";
-    color: white;
-}
-
-.day{
-    display: flex;
-    justify-content: space-between;
-    order:10;
-    margin: 0;
-    width: 10%;
+.day-of-the-week{
+    order: 3;
 }
