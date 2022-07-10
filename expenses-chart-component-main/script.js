@@ -36,7 +36,7 @@ const data =[
 
 for (var i=0;i<7;i++){
     bar[i].style.height = `${Math.floor(data[i].amount*2.5)}px`;
-    spent_per_day[i].innerHTML = `${Math.floor(data[i].amount)}`;
+    spent_per_day[i].innerHTML = `${Math.floor(data[i].amount)}$`;
 }
 
 // Change color by day of week

@@ -56,7 +56,7 @@ body{
     align-items: center;
     justify-content: center;
     margin: 2em auto;    
-    width: 800px;
+    width: 800px; 
     height: 800px;
     background-color: hsl(27, 66%, 92%);
     z-index: 0;
@@ -93,7 +93,7 @@ body{
 }
 
 .chart-body{
-    height:45%;
+    height:55%;
     width: 400px;
     background-color: white;
     margin: 0.75em 0;
@@ -106,11 +106,14 @@ body{
     display: flex;
     justify-content: space-between;
     text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid hsl(27, 66%, 92%);
 }
 
 .column-of-day{
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 
 .spent-seen-on-hover{
@@ -124,6 +127,7 @@ body{
     height:100px;
     border-radius:5px;
     order: 2;
+    width: 35px;
 }
 
 .bar:hover{
@@ -137,4 +141,28 @@ body{
 
 .day-of-the-week{
     order: 3;
+}
+
+.monthly-spending{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.this-month-spending .heading2{
+    margin-top: 10px;
+}
+
+.last-month-comparison{
+    text-align: right;
+}
+
+.last-month-comparison > h4{
+    margin: 0;
+}
+
+.attribution{
+    margin: 0 auto;
+    text-align: center;
 }
